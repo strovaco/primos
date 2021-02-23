@@ -21,23 +21,32 @@ public class Criba {
 						esPrimo[j] = false;
 				}
 			}
-			// ¿Cuántos primos hay?
-			int cuenta = 0;
-			for (i = 0; i < dim; i++) {
-				if (esPrimo[i])
-					cuenta++;
-			}
-			// Rellenar el vector de números primos
-			int[] primos = new int[cuenta];
-			for (i = 0, j = 0; i < dim; i++) {
-				if (esPrimo[i])
-					primos[j++] = i;
-			}
-			return primos;
+			return getPrimos(esPrimo);
 		} else { // max < 2
 			return new int[0];
 			// Vector vacío
 		}
+	}
+
+	private static int[] getPrimos(boolean[] esPrimo) {
+		int i;
+		int j;
+		// ¿Cuántos primos hay?
+		int cuenta = 0;
+
+		for (i = 0; i < esPrimo.length; i++) {
+			if (esPrimo[i])
+				cuenta++;
+		}
+
+		// Rellenar el vector de números primos
+		int[] primos = new int[cuenta];
+		for (i = 0, j = 0; i < esPrimo.length; i++) {
+			if (esPrimo[i])
+				primos[j++] = i;
+		}
+
+		return primos;
 	}
 
 	public static void main(String[] args) {
