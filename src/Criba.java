@@ -1,23 +1,23 @@
 import java.util.Scanner;
 /**
- *  Esta es una clase estática que permite calcular todos los
- * números primos desde el número 2 hasta un número entero
- * suministrado como parámetro al método generarPrimos.
+ *  Esta es una clase est&aacute;tica que permite calcular todos los
+ * n&uacute;meros primos desde el n&uacute;mero 2 hasta un n&uacute;mero entero
+ * suministrado como par&aacute;metro al m&eacute;todo <i>generarPrimos.</i>
  * 
  * @author Juan Vicente Costa Morales (Profesor)
- * @author Antonio Molina Gutiérrez (Alumno)
+ * @author Antonio Molina Guti&eacute;rrez (Alumno)
  * @version 1.0.0 24/02/2021
  * 
  */
 public class Criba {
 	/**
-	 *  Este método privado acepta como parámetro un <b>entero positivo</b>
-	 * y devuelve un array de enteros con todos los números
-	 * primos comprendidos entre el 2 y valor del parámetro.
-	 *  En el caso de que el parámetro sea menor que 2, se
-	 * devuelve un array de enteros vacío.
+	 *  Este m&eacute;todo privado acepta como par&aacute;metro un <b>entero positivo</b>
+	 * y devuelve un array de enteros con todos los n&uacute;meros
+	 * primos comprendidos entre el 2 y valor del par&aacute;metro.
+	 *  En el caso de que el par&aacute;metro sea menor que 2, se
+	 * devuelve un array de enteros vac&iacute;o.
 	 * @param max int Valor hasta el que se calculan los primos
-	 * @return int[] Los números primos hallados.
+	 * @return int[] Los n&uacute;meros primos hallados.
 	 */
 	public static int[] generarPrimos(int max) {
 		int i, j;
@@ -45,9 +45,9 @@ public class Criba {
 		}
 	}
 	
-	/**
-	 *  Este método acepta como parámetro un array de booleanos
-	 * y devuelve un array de enteros con los índices de los
+	/*
+	 *  Este m&eacute;todo acepta como par&aacute;metro un array de booleanos
+	 * y devuelve un array de enteros con los &iacute;ndices de los
 	 * elementos del array booleano cuyo valor es true.
 	 * @param esPrimo boolean[]
 	 * @return int[]
