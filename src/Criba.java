@@ -1,7 +1,24 @@
 import java.util.Scanner;
-
+/**
+ *  Esta es una clase estática que permite calcular todos los
+ * números primos desde el número 2 hasta un número entero
+ * suministrado como parámetro al método generarPrimos.
+ * 
+ * @author Juan Vicente Costa Morales (Profesor)
+ * @author Antonio Molina Gutiérrez (Alumno)
+ * @version 1.0.0 24/02/2021
+ * 
+ */
 public class Criba {
-// Generar números primos de 1 a max
+	/**
+	 *  Este método privado acepta como parámetro un <b>entero positivo</b>
+	 * y devuelve un array de enteros con todos los números
+	 * primos comprendidos entre el 2 y valor del parámetro.
+	 *  En el caso de que el parámetro sea menor que 2, se
+	 * devuelve un array de enteros vacío.
+	 * @param max int Valor hasta el que se calculan los primos
+	 * @return int[] Los números primos hallados.
+	 */
 	public static int[] generarPrimos(int max) {
 		int i, j;
 		if (max >= 2) {
@@ -27,7 +44,14 @@ public class Criba {
 			// Vector vacío
 		}
 	}
-
+	
+	/**
+	 *  Este método acepta como parámetro un array de booleanos
+	 * y devuelve un array de enteros con los índices de los
+	 * elementos del array booleano cuyo valor es true.
+	 * @param esPrimo boolean[]
+	 * @return int[]
+	 */
 	private static int[] getPrimos(boolean[] esPrimo) {
 		int i;
 		int j;
